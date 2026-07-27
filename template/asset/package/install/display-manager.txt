@@ -59,3 +59,12 @@ lightdm-gtk-greeter-settings
 ##
 
 #sddm-theme-maldives
+
+
+
+
+##
+## ## Package / gdm
+##
+
+#gdm3
