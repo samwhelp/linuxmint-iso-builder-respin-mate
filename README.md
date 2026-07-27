@@ -43,7 +43,7 @@
 
 ## Environment
 
-* `Ubuntu 26.04`
+* `LinuxMint 23 (Ubuntu 26.04)`
 
 
 
@@ -157,7 +157,7 @@ make clean
 | Config Files |
 | ------------ |
 | [~/.config](https://github.com/samwhelp/linuxmint-iso-builder-respin-mate/tree/main/template/asset/overlay/etc/skel/.config) |
-| [/etc/dconf/db/linuxmint.d](https://github.com/samwhelp/linuxmint-iso-builder-respin-mate/tree/main/template/asset/overlay/etc/dconf/db/linuxmint.d) |
+| [/etc/dconf/db/distro.d](https://github.com/samwhelp/linuxmint-iso-builder-respin-mate/tree/main/template/asset/overlay/etc/dconf/db/distro.d) |
 | [/usr/share/glib-2.0/schemas](https://github.com/samwhelp/linuxmint-iso-builder-respin-mate/tree/main/template/asset/overlay/usr/share/glib-2.0/schemas) |
 
 
