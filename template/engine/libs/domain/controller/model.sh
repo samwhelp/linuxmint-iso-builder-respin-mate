@@ -464,7 +464,7 @@ function sys_copy_fulfill_scripts_to_chroot () {
 
 	print_info "Copying fulfill scripts to chroot /opt/build ..."
 	mkdir -p "${DISTRO_IMG_DIR_PATH}/opt/build/template/engine"
-	cp -rfT "${ARGS_DIR_PATH}" "${DISTRO_IMG_DIR_PATH}/opt/build/template/engine/args"
+	[ -d "${ARGS_DIR_PATH}" ] && cp -rfT "${ARGS_DIR_PATH}" "${DISTRO_IMG_DIR_PATH}/opt/build/template/engine/args" || true
 	cp -rfT "${LIBS_DIR_PATH}" "${DISTRO_IMG_DIR_PATH}/opt/build/template/engine/libs"
 	cp -rfT "${MODS_DIR_PATH}" "${DISTRO_IMG_DIR_PATH}/opt/build/template/engine/mods"
 	cp -rfT "${MASTER_ASSET_DIR_PATH}" "${DISTRO_IMG_DIR_PATH}/opt/build/template/asset"
