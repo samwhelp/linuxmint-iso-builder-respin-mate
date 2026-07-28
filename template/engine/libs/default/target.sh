@@ -45,6 +45,9 @@ TARGET_BUSINESS_NAME="LinuxMint"
 # Version number. Must be in the format of x.y.z
 TARGET_BUILD_VERSION="23.0.0"
 
+# For xorriso -volid
+TARGET_ISO_VOLID="LinuxMint"
+
 ################################################################################
 # Installer customization
 ################################################################################
