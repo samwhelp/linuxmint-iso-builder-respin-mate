@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 
-#=============================
+################################################################################
 # Module
-#=============================
+################################################################################
 
 function core_check_permission () {
 
@@ -21,6 +21,7 @@ function core_var_dump () {
 	echo "GEAR_DIR_PATH=${GEAR_DIR_PATH}"
 	echo "LIBS_DIR_PATH=${LIBS_DIR_PATH}"
 	echo "MODS_DIR_PATH=${MODS_DIR_PATH}"
+	echo "ARGS_DIR_PATH=${ARGS_DIR_PATH}"
 
 	echo "PLAN_DIR_PATH=${PLAN_DIR_PATH}"
 	echo "TEMPLATE_DIR_PATH=${TEMPLATE_DIR_PATH}"
