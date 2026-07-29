@@ -14,9 +14,7 @@ function core_check_permission () {
 
 }
 
-function core_var_dump () {
-
-	print_info "Dump skeleton variables"
+function raw_var_dump () {
 
 	echo "GEAR_DIR_PATH=${GEAR_DIR_PATH}"
 	echo "LIBS_DIR_PATH=${LIBS_DIR_PATH}"
@@ -41,7 +39,27 @@ function core_var_dump () {
 	echo "INSTALLER_PACKAGE_DIR_PATH=${INSTALLER_PACKAGE_DIR_PATH}"
 	echo "INSTALLER_PACKAGE_INSTALL_DIR_PATH=${INSTALLER_PACKAGE_INSTALL_DIR_PATH}"
 
+}
+
+function core_var_dump () {
+
+	print_info "Dump skeleton variables"
+
+	raw_var_dump
+
 	judge "Dump skeleton variables"
+
+}
+
+function raw_building_var_dump () {
+
+	echo "APT_SOURCE=${APT_SOURCE}"
+	echo "TARGET_UBUNTU_VERSION=${TARGET_UBUNTU_VERSION}"
+	echo "TARGET_ARCH=${TARGET_ARCH}"
+	echo "TARGET_NAME=${TARGET_NAME}"
+	echo "TARGET_BUSINESS_NAME=${TARGET_BUSINESS_NAME}"
+	echo "TARGET_BUILD_VERSION=${TARGET_BUILD_VERSION}"
+	echo "PKG_SERVER=${PKG_SERVER}"
 
 }
 
@@ -49,11 +67,7 @@ function core_building_var_dump () {
 
 	print_info "Dump building variables"
 
-	echo "TARGET_UBUNTU_VERSION=${TARGET_UBUNTU_VERSION}"
-	echo "APT_SOURCE=${APT_SOURCE}"
-	echo "TARGET_NAME=${TARGET_NAME}"
-	echo "TARGET_BUSINESS_NAME=${TARGET_BUSINESS_NAME}"
-	echo "TARGET_BUILD_VERSION=${TARGET_BUILD_VERSION}"
+	raw_building_var_dump
 
 	judge "Dump building variables"
 
