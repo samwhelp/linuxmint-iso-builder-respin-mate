@@ -15,7 +15,7 @@
 # This is the apt source for both the build process and the live system.
 # It can be any Ubuntu mirror that you prefer.
 # You can change it to any other mirror that you prefer.
-APT_SOURCE="http://archive.ubuntu.com/ubuntu/"
+APT_SOURCE="http://archive.ubuntu.com/ubuntu"
 
 # This is the target Ubuntu version code name for the build.
 # It should match the Ubuntu version you are building against.

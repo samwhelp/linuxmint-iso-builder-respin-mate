@@ -37,7 +37,7 @@ function model_linuxmint_swap_packages () {
 	## ## Install LinuxMint swap packages
 	##
 
-	apt install ${INTERACTIVE} \
+	apt install -y \
 		linuxmint-keyring \
 		base-files \
 	--install-recommends
